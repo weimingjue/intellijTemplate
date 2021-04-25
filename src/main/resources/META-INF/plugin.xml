@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.foundation.template</id>
     <name>MVVM</name>
-    <vendor>mj</vendor>
+    <vendor>MiJu</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -20,7 +20,6 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="com.foundation.template.listeners.MyProjectManagerListener"
-            topic="com.intellij.openapi.project.ProjectManagerListener" />
+
     </applicationListeners>
 </idea-plugin>
