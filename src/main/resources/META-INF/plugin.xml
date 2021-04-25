@@ -1,19 +1,26 @@
 <idea-plugin>
-    <id>com.github.weimingjue.intellijtemplate</id>
-    <name>intellijTemplate</name>
-    <vendor>weimingjue</vendor>
+    <id>com.foundation.template</id>
+    <name>MVVM</name>
+    <vendor>mj</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.weimingjue.intellijtemplate.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.weimingjue.intellijtemplate.services.MyProjectService"/>
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <applicationService
+            serviceImplementation="com.foundation.template.services.MyApplicationService" />
+        <projectService serviceImplementation="com.foundation.template.services.MyProjectService" />
+
+        <wizardTemplateProvider
+            implementation="com.foundation.template.temp.WizardTemplateProviderImpl" />
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.weimingjue.intellijtemplate.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+        <listener class="com.foundation.template.listeners.MyProjectManagerListener"
+            topic="com.intellij.openapi.project.ProjectManagerListener" />
     </applicationListeners>
 </idea-plugin>

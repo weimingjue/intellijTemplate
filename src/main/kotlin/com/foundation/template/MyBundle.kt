@@ -1,4 +1,4 @@
-package com.github.weimingjue.intellijtemplate
+package com.foundation.template
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls

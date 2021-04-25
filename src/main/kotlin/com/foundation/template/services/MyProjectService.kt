@@ -1,6 +1,6 @@
-package com.github.weimingjue.intellijtemplate.services
+package com.foundation.template.services
 
-import com.github.weimingjue.intellijtemplate.MyBundle
+import com.foundation.template.MyBundle
 import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {
