@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.foundation.template</id>
-    <name>MVVM</name>
+    <name>MVP Template</name>
     <vendor>MiJu</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -16,7 +16,7 @@
         <projectService serviceImplementation="com.foundation.template.services.MyProjectService" />
 
         <wizardTemplateProvider
-            implementation="com.foundation.template.temp.WizardTemplateProviderImpl" />
+            implementation="com.foundation.template.MyWizardTemplateProvider" />
     </extensions>
 
     <applicationListeners>

@@ -1,4 +1,4 @@
-package com.foundation.template
+package com.foundation.template.util
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls
